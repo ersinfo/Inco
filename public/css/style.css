@@ -1,0 +1,43 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    
+}
+a {
+  text-decoration: none;
+}
+.hero-section {
+  background-image: url('../images/Justice.png');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin-top: 4rem; /* same as mt-4 */
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.two-line-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* Number of lines */
+  line-clamp: 2;               /* Standard property for compatibility */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 3rem; /* ensures spacing for 2 lines */
+}
+
+.card-body{
+  background-color: #f8fdff;
+}
+
+
